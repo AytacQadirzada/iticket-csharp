@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\entities\\base\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\entities\\base\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\iticket.csproj|solutionrelative:iticket\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\appsettings.json",
+              "RelativeDocumentMoniker": "iticket\\appsettings.json",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\appsettings.json",
+              "RelativeToolTip": "iticket\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-28T13:33:14.162Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "iticket\\Entities\\Base\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "iticket\\Entities\\Base\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:27:54.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Program.cs",
+              "RelativeDocumentMoniker": "iticket\\Program.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Program.cs",
+              "RelativeToolTip": "iticket\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:27:53.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseAuditableEntity.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Base\\BaseAuditableEntity.cs",
+              "RelativeDocumentMoniker": "iticket\\Entities\\Base\\BaseAuditableEntity.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Base\\BaseAuditableEntity.cs",
+              "RelativeToolTip": "iticket\\Entities\\Base\\BaseAuditableEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:24:57.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "iticket\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\User.cs",
+              "RelativeToolTip": "iticket\\Entities\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:17:39.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "iticket\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Entities\\Category.cs",
+              "RelativeToolTip": "iticket\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:16:48.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "iticket\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket\\iticket\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "iticket\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T13:13:23.849Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

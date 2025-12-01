@@ -1,0 +1,6 @@
+@iticket_HostAddress = http://localhost:5199
+
+GET {{iticket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
