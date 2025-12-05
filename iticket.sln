@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36616.10 d17.14
+VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iticket", "iticket\iticket.csproj", "{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iticket", "iticket\Iticket.csproj", "{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iticket.Data", "Iticket.Data\Iticket.Data.csproj", "{FB954475-E994-4896-876B-F05E8E48BC7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iticket.Core", "Iticket.Core\Iticket.Core.csproj", "{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iticket.Business", "Iticket.Business\Iticket.Business.csproj", "{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB954475-E994-4896-876B-F05E8E48BC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB954475-E994-4896-876B-F05E8E48BC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB954475-E994-4896-876B-F05E8E48BC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB954475-E994-4896-876B-F05E8E48BC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
