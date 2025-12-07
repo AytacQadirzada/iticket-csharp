@@ -1021,6 +1021,10 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "venuesId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1186,10 +1190,6 @@
       "ProductEventRequestDto": {
         "type": "object",
         "properties": {
-          "productId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "eventName": {
             "type": "string",
             "nullable": true
@@ -1203,7 +1203,7 @@
             "format": "date-time",
             "nullable": true
           },
-          "venuesId": {
+          "hallId": {
             "type": "integer",
             "format": "int32"
           }
@@ -1282,6 +1282,13 @@
           "categoryId": {
             "type": "integer",
             "format": "int32"
+          },
+          "productEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductEventRequestDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

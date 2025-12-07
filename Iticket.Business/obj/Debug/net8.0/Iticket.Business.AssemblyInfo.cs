@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Iticket.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+220833b38a7f6e0f05eca0b228b7138195e8a22b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd600e7433e74f797188596b8d87a6a923a68e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Iticket.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Iticket.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,5 +9,6 @@ namespace Iticket.Business.Dto.Request
     public class HallRequestDto
     {
         public string Name { get; set; }
+        public int VenuesId { get; set; }
     }
 }

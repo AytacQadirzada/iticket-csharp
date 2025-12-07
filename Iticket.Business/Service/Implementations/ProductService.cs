@@ -28,7 +28,9 @@ namespace Iticket.Business.Service.Implementations
                 if (entity.ProductEvents is null)
                     entity.ProductEvents = new List<ProductEvent>();
 
-                var hall = await _context.Halls.Include(n => n.).FirstOrDefaultAsync(n => n.Id == productEvent.HallId);
+                var hall = await _context.Halls.Include(n => n.Sectors).ThenInclude(n => n.Seats).FirstOrDefaultAsync(n => n.Id == productEvent.HallId);
+                Console.WriteLine(hall);
+                Console.WriteLine(hall.ToString());
 
                 entity.ProductEvents.Add(new ProductEvent
                 {

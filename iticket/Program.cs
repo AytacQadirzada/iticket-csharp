@@ -76,6 +76,15 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IMailSendService, MailSendService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductEventService, ProductEventService>();
+builder.Services.AddScoped<IHallService, HallService>();
+builder.Services.AddScoped<ISeatService, SeatService>();
+builder.Services.AddScoped<ISectorService, SectorService>();
+builder.Services.AddScoped<ITicketService, TicketService>();
+builder.Services.AddScoped<IVenuesService, VenuesService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 
 var tempProvider = builder.Services.BuildServiceProvider();
 var loggerFactory = tempProvider.GetRequiredService<ILoggerFactory>();
