@@ -85,7 +85,12 @@ namespace iticket.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("text");
 
+                    b.Property<int>("VenuesId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("VenuesId");
 
                     b.ToTable("Halls");
                 });
@@ -174,6 +179,9 @@ namespace iticket.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("HallId")
+                        .HasColumnType("integer");
+
                     b.Property<double>("MinPrice")
                         .HasColumnType("double precision");
 
@@ -186,14 +194,11 @@ namespace iticket.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("text");
 
-                    b.Property<int>("VenuesId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("HallId");
 
-                    b.HasIndex("VenuesId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("ProductEvents");
                 });
@@ -287,8 +292,9 @@ namespace iticket.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("Number")
-                        .HasColumnType("integer");
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<double>("Price")
                         .HasColumnType("double precision");
@@ -303,7 +309,6 @@ namespace iticket.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -590,6 +595,17 @@ namespace iticket.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Iticket.Core.Entities.Hall", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.Venues", "Venues")
+                        .WithMany("Halls")
+                        .HasForeignKey("VenuesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Venues");
+                });
+
             modelBuilder.Entity("Iticket.Core.Entities.Product", b =>
                 {
                     b.HasOne("Iticket.Core.Entities.Category", "Category")
@@ -603,21 +619,21 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.ProductEvent", b =>
                 {
+                    b.HasOne("Iticket.Core.Entities.Hall", "Hall")
+                        .WithMany("ProductEvents")
+                        .HasForeignKey("HallId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Iticket.Core.Entities.Product", "Product")
                         .WithMany("ProductEvents")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Iticket.Core.Entities.Venues", "Venues")
-                        .WithMany("ProductEvents")
-                        .HasForeignKey("VenuesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Hall");
 
                     b.Navigation("Product");
-
-                    b.Navigation("Venues");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.Seat", b =>
@@ -633,28 +649,26 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Sector", b =>
                 {
-                    b.HasOne("Iticket.Core.Entities.Hall", "Hall")
+                    b.HasOne("Iticket.Core.Entities.Hall", "Halls")
                         .WithMany("Sectors")
                         .HasForeignKey("HallId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Hall");
+                    b.Navigation("Halls");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.Ticket", b =>
                 {
                     b.HasOne("Iticket.Core.Entities.Seat", "Seat")
-                        .WithMany("Ticket")
+                        .WithMany("Tickets")
                         .HasForeignKey("SeatId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Iticket.Core.Entities.User", "User")
                         .WithMany("Tickets")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
                     b.Navigation("Seat");
 
@@ -719,6 +733,8 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Hall", b =>
                 {
+                    b.Navigation("ProductEvents");
+
                     b.Navigation("Sectors");
                 });
 
@@ -729,7 +745,7 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Seat", b =>
                 {
-                    b.Navigation("Ticket");
+                    b.Navigation("Tickets");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.Sector", b =>
@@ -744,7 +760,7 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Venues", b =>
                 {
-                    b.Navigation("ProductEvents");
+                    b.Navigation("Halls");
                 });
 #pragma warning restore 612, 618
         }

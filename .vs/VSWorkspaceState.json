@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\iticket",
-    "\\Iticket.Business\\Service\\Implementations",
-    "\\Iticket.Core",
-    "\\Iticket.Core\\Entities"
+    ""
   ],
-  "SelectedNode": "\\Iticket.Core\\Entities\\Venues.cs",
   "PreviewInSolutionExplorer": false
 }

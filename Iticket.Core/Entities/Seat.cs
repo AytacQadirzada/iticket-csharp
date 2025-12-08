@@ -9,6 +9,6 @@ namespace Iticket.Core.Entities
 
         public int SectorId { get; set; }
         public Sector Sector { get; set; }
-        public List<Ticket> Ticket { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
     }
 }

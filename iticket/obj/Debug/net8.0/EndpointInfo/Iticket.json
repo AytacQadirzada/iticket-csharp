@@ -1011,6 +1011,20 @@
               "$ref": "#/components/schemas/Sector"
             },
             "nullable": true
+          },
+          "venuesId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "venues": {
+            "$ref": "#/components/schemas/Venues"
+          },
+          "productEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductEvent"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1177,12 +1191,12 @@
             "format": "date-time",
             "nullable": true
           },
-          "venuesId": {
+          "hallId": {
             "type": "integer",
             "format": "int32"
           },
-          "venues": {
-            "$ref": "#/components/schemas/Venues"
+          "hall": {
+            "$ref": "#/components/schemas/Hall"
           }
         },
         "additionalProperties": false
@@ -1206,6 +1220,13 @@
           "hallId": {
             "type": "integer",
             "format": "int32"
+          },
+          "sectorPrices": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SectorPriceRequestDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1410,7 +1431,7 @@
           "sector": {
             "$ref": "#/components/schemas/Sector"
           },
-          "ticket": {
+          "tickets": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Ticket"
@@ -1507,7 +1528,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "hall": {
+          "halls": {
             "$ref": "#/components/schemas/Hall"
           }
         },
@@ -1521,6 +1542,20 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "SectorPriceRequestDto": {
+        "type": "object",
+        "properties": {
+          "sectorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
       },
       "SectorRequestDto": {
         "type": "object",
@@ -1601,8 +1636,8 @@
             "format": "double"
           },
           "number": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           },
           "seatId": {
             "type": "integer",
@@ -1766,10 +1801,10 @@
             "type": "string",
             "nullable": true
           },
-          "productEvents": {
+          "halls": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ProductEvent"
+              "$ref": "#/components/schemas/Hall"
             },
             "nullable": true
           }

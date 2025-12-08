@@ -10,7 +10,7 @@ namespace Iticket.Core.Entities
         #region Relation
         public ICollection<Seat> Seats { get; set; }
         public int HallId { get; set; }
-        public Hall Hall { get; set; }
+        public Hall Halls { get; set; }
         #endregion
     }
 }

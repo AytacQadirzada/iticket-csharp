@@ -34,3 +34,21 @@ C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8
 C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.pdb
 C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.genruntimeconfig.cache
 C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\ref\Iticket.Data.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Data.deps.json
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Data.runtimeconfig.json
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Data.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Data.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\bin\Debug\net8.0\Iticket.Core.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.csproj.AssemblyReference.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.AssemblyInfoInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.AssemblyInfo.cs
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.csproj.CoreCompileInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.sourcelink.json
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket..4D45766C.Up2Date
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\refint\Iticket.Data.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\Iticket.Data.genruntimeconfig.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Data\obj\Debug\net8.0\ref\Iticket.Data.dll

@@ -13,5 +13,5 @@ public class Venues : BaseAuditableEntity
     public string Phone { get; set; }
     public string MapLat { get; set; }
     public string MapLng { get; set; }
-    public ICollection<ProductEvent> ProductEvents { get; set; }
+    public ICollection<Hall> Halls { get; set; }
 }
