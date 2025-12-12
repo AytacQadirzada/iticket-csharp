@@ -10,5 +10,6 @@ namespace Iticket.Business.Dto.Response
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public SectorResponse Sectors { get; set; }
     }
 }

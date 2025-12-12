@@ -16,6 +16,6 @@ namespace Iticket.Business.Dto.Response
         public string Phone { get; set; }
         public string MapLat { get; set; }
         public string MapLng { get; set; }
-        public ICollection<ProductEvent> ProductEvents { get; set; }
+        public ICollection<ProductEventResponse> ProductEvents { get; set; }
     }
 }

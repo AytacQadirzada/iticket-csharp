@@ -1053,6 +1053,9 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "sectors": {
+            "$ref": "#/components/schemas/SectorResponse"
           }
         },
         "additionalProperties": false
@@ -1254,8 +1257,8 @@
             "format": "date-time",
             "nullable": true
           },
-          "venues": {
-            "$ref": "#/components/schemas/Venues"
+          "hall": {
+            "$ref": "#/components/schemas/HallResponse"
           }
         },
         "additionalProperties": false
@@ -1359,7 +1362,7 @@
             "nullable": true
           },
           "category": {
-            "$ref": "#/components/schemas/Category"
+            "$ref": "#/components/schemas/CategoryResponse"
           }
         },
         "additionalProperties": false
@@ -1480,7 +1483,7 @@
           "ticket": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Ticket"
+              "$ref": "#/components/schemas/TicketResponse"
             },
             "nullable": true
           }
@@ -1594,9 +1597,6 @@
               "$ref": "#/components/schemas/Seat"
             },
             "nullable": true
-          },
-          "hall": {
-            "$ref": "#/components/schemas/Hall"
           }
         },
         "additionalProperties": false
@@ -1645,6 +1645,30 @@
           },
           "seat": {
             "$ref": "#/components/schemas/Seat"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TicketResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "seat": {
+            "$ref": "#/components/schemas/SeatResponse"
           }
         },
         "additionalProperties": false
@@ -1883,7 +1907,7 @@
           "productEvents": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ProductEvent"
+              "$ref": "#/components/schemas/ProductEventResponse"
             },
             "nullable": true
           }

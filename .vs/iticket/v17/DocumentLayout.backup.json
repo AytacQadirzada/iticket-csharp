@@ -3,64 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|solutionrelative:iticket\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.core\\entities\\productevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|solutionrelative:iticket.core\\entities\\productevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\venuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\venuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\implementations\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\implementations\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\dto\\request\\sectorpricerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\dto\\request\\sectorpricerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.core\\entities\\base\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|solutionrelative:iticket.core\\entities\\base\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\sectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\sectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.core\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|solutionrelative:iticket.core\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|solutionrelative:iticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\implementations\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\implementations\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\producteventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\producteventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\hallrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\hallrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\dto\\response\\ticketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\dto\\response\\ticketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.data\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB954475-E994-4896-876B-F05E8E48BC7E}|Iticket.Data\\Iticket.Data.csproj|solutionrelative:iticket.data\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\dto\\request\\sectorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\dto\\request\\sectorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56E9C677-17BE-43D3-AFC2-3B9D6EE1F7D5}|iticket\\Iticket.csproj|solutionrelative:iticket\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\interfaces\\isectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\interfaces\\isectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.business\\service\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A0A3F2F-05EE-4EB5-A29C-A6B9F65EFA5F}|Iticket.Business\\Iticket.Business.csproj|solutionrelative:iticket.business\\service\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|c:\\users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket.core\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEDB5ED7-51F1-46FB-8176-CC128884BFC8}|Iticket.Core\\Iticket.Core.csproj|solutionrelative:iticket.core\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,187 +71,171 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\ProductService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Implementations\\ProductService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\ProductService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\ProductService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAiwEIAAAA+AAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "iticket\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "iticket\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T13:42:01.813Z",
+              "WhenOpened": "2025-12-12T08:46:28.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductEvent.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\ProductEvent.cs",
-              "RelativeDocumentMoniker": "Iticket.Core\\Entities\\ProductEvent.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\ProductEvent.cs",
-              "RelativeToolTip": "Iticket.Core\\Entities\\ProductEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\ProductService.cs*",
+              "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\ProductService.cs*",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAHUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T13:41:59.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\Base\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Iticket.Core\\Entities\\Base\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\Base\\BaseEntity.cs",
-              "RelativeToolTip": "Iticket.Core\\Entities\\Base\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:54:50.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseAuditableEntity.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\Base\\BaseAuditableEntity.cs",
-              "RelativeDocumentMoniker": "Iticket.Core\\Entities\\Base\\BaseAuditableEntity.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Entities\\Base\\BaseAuditableEntity.cs",
-              "RelativeToolTip": "Iticket.Core\\Entities\\Base\\BaseAuditableEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:54:44.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Program.cs",
-              "RelativeDocumentMoniker": "iticket\\Program.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Program.cs",
-              "RelativeToolTip": "iticket\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAmwGwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:45:57.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TicketResponse.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Response\\TicketResponse.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Dto\\Response\\TicketResponse.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Response\\TicketResponse.cs",
-              "RelativeToolTip": "Iticket.Business\\Dto\\Response\\TicketResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:34:32.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SectorPriceRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Request\\SectorPriceRequestDto.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Dto\\Request\\SectorPriceRequestDto.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Request\\SectorPriceRequestDto.cs",
-              "RelativeToolTip": "Iticket.Business\\Dto\\Request\\SectorPriceRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:14:48.591Z",
+              "WhenOpened": "2025-12-12T06:30:09.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Iticket.Data\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Iticket.Data\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\UnitOfWork.cs",
+              "RelativeToolTip": "Iticket.Data\\UnitOfWork.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:09:46.341Z",
+              "WhenOpened": "2025-12-12T05:51:45.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SectorRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Request\\SectorRequestDto.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Dto\\Request\\SectorRequestDto.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Dto\\Request\\SectorRequestDto.cs",
-              "RelativeToolTip": "Iticket.Business\\Dto\\Request\\SectorRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:08:23.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "iticket\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "iticket\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:32:16.059Z"
+              "WhenOpened": "2025-12-12T05:50:08.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SeatService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\SeatService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Implementations\\SeatService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\SeatService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\SeatService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
+              "Title": "VenuesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\VenuesRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\VenuesRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\VenuesRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\VenuesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:26:29.112Z",
+              "WhenOpened": "2025-12-12T05:50:04.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\TicketRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\TicketRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\TicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:49:01.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SectorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\SectorRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\SectorRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\SectorRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\SectorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:47:54.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SeatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\SeatRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\SeatRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\SeatRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\SeatRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:46:50.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "TicketService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\TicketService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Implementations\\TicketService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\TicketService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\TicketService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAnwB8AAAA3AAAAAAAAAA==",
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\ProductRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:26:24.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ISectorService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\ISectorService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Interfaces\\ISectorService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\ISectorService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Interfaces\\ISectorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:25:41.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:25:40.56Z"
+              "WhenOpened": "2025-12-12T05:46:04.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ITicketService.cs",
-              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\ITicketService.cs",
-              "RelativeDocumentMoniker": "Iticket.Business\\Service\\Interfaces\\ITicketService.cs",
-              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Interfaces\\ITicketService.cs",
-              "RelativeToolTip": "Iticket.Business\\Service\\Interfaces\\ITicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Title": "ProductEventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\ProductEventRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\ProductEventRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\ProductEventRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\ProductEventRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:25:39.491Z"
+              "WhenOpened": "2025-12-12T05:44:25.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HallRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\HallRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\HallRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\HallRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\HallRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:43:33.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Data\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "Iticket.Data\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:41:23.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Iticket.Core\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "Iticket.Core\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T05:34:29.547Z",
+              "EditorCaption": ""
             }
           ]
         }

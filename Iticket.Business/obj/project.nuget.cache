@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4+1Ujh7QLR8=",
+  "dgSpecHash": "443waOiNKVo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
+  "projectFilePath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\automapper\\16.0.0\\automapper.16.0.0.nupkg.sha512",
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.22\\microsoft.aspnetcore.authentication.jwtbearer.8.0.22.nupkg.sha512",
