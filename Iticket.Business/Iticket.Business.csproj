@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Iticket.Data\Iticket.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Expection\" />
-  </ItemGroup>
-
 </Project>

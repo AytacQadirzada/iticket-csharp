@@ -21,5 +21,5 @@ internal class UserResponse
     public DateTime? DateOfBirth { get; set; }
     public HashSet<string> Roles { get; set; }
     public bool IsEmailVerified { get; set; }
-    public ICollection<Ticket> Tickets { get; set; }
+    public ICollection<TicketResponse> Tickets { get; set; }
 }

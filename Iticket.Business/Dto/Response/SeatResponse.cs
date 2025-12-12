@@ -13,6 +13,6 @@ namespace Iticket.Business.Dto.Response
         public string RowNumber { get; set; }
         public string SeatNumber { get; set; }
         public Sector Sector { get; set; }
-        public List<Ticket> Ticket { get; set; }
+        public List<TicketResponse> Ticket { get; set; }
     }
 }

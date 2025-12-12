@@ -14,6 +14,5 @@ namespace Iticket.Business.Dto.Response
         public string Name { get; set; }
         public SectorClassification SectorClassification { get; set; }
         public ICollection<Seat> Seats { get; set; }
-        public Hall Hall { get; set; }
     }
 }

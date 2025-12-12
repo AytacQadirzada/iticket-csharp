@@ -1,4 +1,5 @@
 ﻿using Iticket.Business.Dto.Request;
+using Iticket.Business.Expection;
 using Iticket.Business.Service.Interfaces;
 using Iticket.Business.Token.Implementations;
 using Iticket.Business.Token.Interfaces;
@@ -137,7 +138,7 @@ public class AuthController : Controller
                 return Ok("OTP təsdiqləndi");
             }
 
-            return BadRequest("OTP yanlışdır");
+            throw new OtpMismatchException();
         }
         return BadRequest("OTP kodun vaxtı bitib!");
     }

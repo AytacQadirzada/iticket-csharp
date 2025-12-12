@@ -39,7 +39,7 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task<List<HallResponse>> GetAll()
         {
-            var entities = await _context.Halls.ToListAsync();
+            var entities = await _context.Halls.Include(n => n.Sectors).ToListAsync();
 
             if (entities is null)
                 throw new Exception("Categories not found!");

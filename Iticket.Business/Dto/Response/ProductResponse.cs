@@ -19,6 +19,6 @@ namespace Iticket.Business.Dto.Response
         public string About { get; set; }
         public string Language { get; set; }
         public string Description { get; set; }
-        public Category Category { get; set; }
+        public CategoryResponse Category { get; set; }
     }
 }
