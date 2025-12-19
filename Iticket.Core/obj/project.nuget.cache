@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yBLaMOUYhvI=",
+  "dgSpecHash": "yNkpf2kFUTo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
+  "projectFilePath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.22\\microsoft.aspnetcore.cryptography.internal.8.0.22.nupkg.sha512",
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.22\\microsoft.aspnetcore.cryptography.keyderivation.8.0.22.nupkg.sha512",

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Iticket.Core.Interfaces
 {
-    public interface ISeatRepository
+    public interface IBasketItemRepository
     {
     }
 }

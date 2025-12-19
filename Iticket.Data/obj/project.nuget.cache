@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qA9M0z11rTE=",
+  "dgSpecHash": "6JhIz3l2768=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
+  "projectFilePath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.22\\microsoft.aspnetcore.cryptography.internal.8.0.22.nupkg.sha512",

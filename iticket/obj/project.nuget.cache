@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bgKeSnoi+3c=",
+  "dgSpecHash": "rh9aEVaoLEQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\iticket\\Iticket.csproj",
+  "projectFilePath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\Iticket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\automapper\\16.0.0\\automapper.16.0.0.nupkg.sha512",
     "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

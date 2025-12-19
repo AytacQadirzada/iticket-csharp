@@ -27,14 +27,13 @@ public class Mapper : Profile
         CreateMap<ProductEventRequestDto, ProductEvent>();
         CreateMap<Product, ProductResponse>();
         CreateMap<ProductRequestDto, Product>();
-        CreateMap<Seat, SeatResponse>();
-        CreateMap<SeatRequestDto, Seat>();
         CreateMap<Sector, SectorResponse>();
         CreateMap<SectorRequestDto, Sector>();
         CreateMap<Ticket, TicketResponse>();
         CreateMap<TicketRequestDto, Ticket>();
         CreateMap<Venues, VenuesResponse>();
         CreateMap<VenuesRequestDto, Venues>();
+        CreateMap<Wishlist, WishlistResponse>();
 
 
 

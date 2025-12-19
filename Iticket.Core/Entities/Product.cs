@@ -16,6 +16,6 @@ namespace Iticket.Core.Entities
         public ICollection<ProductEvent> ProductEvents { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
-
+        public ICollection<BasketItem> BasketItems { get; set; }
     }
 }

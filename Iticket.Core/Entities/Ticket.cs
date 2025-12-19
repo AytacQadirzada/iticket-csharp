@@ -8,6 +8,10 @@ public class Ticket : BaseAuditableEntity
     public User? User { get; set; }
     public double Price { get; set; }
     public string Number { get; set; }
-    public int SeatId { get; set; }
-    public Seat Seat { get; set; }
+    public string? RowNumber { get; set; }
+    public string? ColumnNumber { get; set; }
+    public int SectorId { get; set; }
+    public Sector Sector { get; set; }
+    public int ProductEventId { get; set; }
+    public ProductEvent ProductEvent { get; set; }
 }

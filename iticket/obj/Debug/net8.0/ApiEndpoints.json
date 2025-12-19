@@ -13,7 +13,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Iticket.Business.Dto.Response.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "iticket.Controllers.AuthController",
@@ -29,44 +39,13 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "iticket.Controllers.AuthController",
-    "Method": "SendOtpAsync",
-    "RelativePath": "api/Auth/SendOtp",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "iticket.Controllers.AuthController",
-    "Method": "VerifyOtp",
-    "RelativePath": "api/Auth/VerifyOtp",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "otp",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "Iticket.Controllers.CategoryController",
@@ -317,68 +296,6 @@
     ]
   },
   {
-    "ContainingType": "Iticket.Controllers.SeatController",
-    "Method": "Create",
-    "RelativePath": "api/Seat",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Iticket.Business.Dto.Request.SeatRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Iticket.Controllers.SeatController",
-    "Method": "Get",
-    "RelativePath": "api/Seat/Get/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Iticket.Business.Dto.Response.SeatResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Iticket.Controllers.SeatController",
-    "Method": "GetAll",
-    "RelativePath": "api/Seat/GetAll",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.SeatResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Iticket.Controllers.SectorController",
     "Method": "Create",
     "RelativePath": "api/Sector",
@@ -441,6 +358,55 @@
     ]
   },
   {
+    "ContainingType": "iticket.Controllers.UserConroller",
+    "Method": "SendOtpAsync",
+    "RelativePath": "api/UserConroller/SendOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "iticket.Controllers.UserConroller",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/UserConroller/VerifyOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "otp",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Iticket.Controllers.VenuesController",
     "Method": "Create",
     "RelativePath": "api/Venues",
@@ -498,6 +464,86 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.WishlistController",
+    "Method": "AddItem",
+    "RelativePath": "api/Wishlist/AddItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wishlistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.WishlistController",
+    "Method": "Get",
+    "RelativePath": "api/Wishlist/Get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Iticket.Business.Dto.Response.WishlistResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.WishlistController",
+    "Method": "RemoveItem",
+    "RelativePath": "api/Wishlist/RemoveItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wishlistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
