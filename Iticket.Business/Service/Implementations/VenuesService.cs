@@ -2,44 +2,51 @@
 using Iticket.Business.Dto.Request;
 using Iticket.Business.Dto.Response;
 using Iticket.Business.Service.Interfaces;
+using Iticket.Core;
 using Iticket.Core.Entities;
 using Iticket.Data.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Iticket.Business.Service.Implementations
 {
     public class VenuesService :IVenuesService
     {
-        private readonly AppDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        
 
-        public VenuesService(AppDbContext context, IMapper mapper)
+        public VenuesService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
             _mapper = mapper;
+            
+
+
+
         }
 
         public async Task Create(VenuesRequestDto request)
         {
             Venues entity = _mapper.Map<Venues>(request);
-            await _context.Venues.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.VenuesRepository.AddAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task Delete(int id)
         {
-            var entity = await _context.Venues.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.VenuesRepository.GetAsync(n => n.Id == id);
 
             if (entity is null)
                 throw new Exception("Venues not found!");
 
-            _context.Venues.Remove(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.VenuesRepository.DeleteAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task<List<VenuesResponse>> GetAll()
         {
-            var entities = await _context.Venues.ToListAsync();
+            var entities = await _unitOfWork.VenuesRepository.GetAllAsync();
 
             if (entities is null)
                 throw new Exception("Venues not found!");
@@ -50,9 +57,10 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task<VenuesResponse> Get(int id)
         {
-            var entity = await _context.Venues.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.VenuesRepository.GetAsync(n => n.Id == id);
 
             if (entity is null)
+
                 throw new Exception("Venues not found!");
 
             var result = _mapper.Map<VenuesResponse>(entity);

@@ -3180,9 +3180,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\iticket\\Iticket.csproj",
-      "projectName": "Iticket",
-      "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\iticket\\Iticket.csproj",
+      "projectUniqueName": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\iticket.csproj",
+      "projectName": "iticket",
+      "projectPath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\iticket.csproj",
       "packagesPath": "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\iticket\\obj\\",
       "projectStyle": "PackageReference",
@@ -3205,8 +3205,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {
-              "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj"
+            "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {
+              "projectPath": "C:\\Users\\aytac.gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj"
             }
           }
         }

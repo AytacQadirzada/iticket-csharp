@@ -2,44 +2,56 @@
 using Iticket.Business.Dto.Request;
 using Iticket.Business.Dto.Response;
 using Iticket.Business.Service.Interfaces;
+using Iticket.Core;
 using Iticket.Core.Entities;
 using Iticket.Data.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Iticket.Business.Service.Implementations
 {
     public class HallService : IHallService
     {
-        private readonly AppDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        
 
-        public HallService(AppDbContext context, IMapper mapper)
+        public HallService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
             _mapper = mapper;
+            
         }
 
         public async Task Create(HallRequestDto request)
         {
             Hall entity = _mapper.Map<Hall>(request);
-            await _context.Halls.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.HallRepository.AddAsync(entity);
+            
+
+
+
+
+
+
+
+
         }
 
         public async Task Delete(int id)
         {
-            var entity = await _context.Halls.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.HallRepository.GetAsync(n => n.Id == id);
 
             if (entity is null)
                 throw new Exception("Category not found!");
 
-            _context.Halls.Remove(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.HallRepository.DeleteAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task<List<HallResponse>> GetAll()
         {
-            var entities = await _context.Halls.Include(n => n.Sectors).ToListAsync();
+            var entities = await _unitOfWork.HallRepository.GetAllAsync(includes: "Sectors");
 
             if (entities is null)
                 throw new Exception("Categories not found!");
@@ -50,7 +62,7 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task<HallResponse> Get(int id)
         {
-            var entity = await _context.Halls.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.HallRepository.GetAsync(n => n.Id == id, "Sectors");
 
             if (entity is null)
                 throw new Exception("Category not found!");

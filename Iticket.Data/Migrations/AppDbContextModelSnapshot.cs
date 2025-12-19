@@ -22,6 +22,97 @@ namespace iticket.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("BasketBasketItem", b =>
+                {
+                    b.Property<int>("BasketItemsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("BasketsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("BasketItemsId", "BasketsId");
+
+                    b.HasIndex("BasketsId");
+
+                    b.ToTable("BasketBasketItem");
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.Basket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("double precision");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Baskets");
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double precision");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TicketId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("TicketId");
+
+                    b.ToTable("BasketItems");
+                });
+
             modelBuilder.Entity("Iticket.Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -151,9 +242,14 @@ namespace iticket.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("text");
 
+                    b.Property<int?>("WishlistId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("WishlistId");
 
                     b.ToTable("Products");
                 });
@@ -203,44 +299,6 @@ namespace iticket.Migrations
                     b.ToTable("ProductEvents");
                 });
 
-            modelBuilder.Entity("Iticket.Core.Entities.Seat", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("RowNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SeatNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("SectorId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SectorId");
-
-                    b.ToTable("Seats");
-                });
-
             modelBuilder.Entity("Iticket.Core.Entities.Sector", b =>
                 {
                     b.Property<int>("Id")
@@ -248,6 +306,9 @@ namespace iticket.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("integer");
 
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
@@ -261,6 +322,12 @@ namespace iticket.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("RowCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SeatCount")
+                        .HasColumnType("integer");
 
                     b.Property<int>("SectorClassification")
                         .HasColumnType("integer");
@@ -286,6 +353,9 @@ namespace iticket.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ColumnNumber")
+                        .HasColumnType("text");
+
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
@@ -299,7 +369,13 @@ namespace iticket.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("double precision");
 
-                    b.Property<int>("SeatId")
+                    b.Property<int>("ProductEventId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("RowNumber")
+                        .HasColumnType("text");
+
+                    b.Property<int>("SectorId")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("UpdateDate")
@@ -313,7 +389,9 @@ namespace iticket.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SeatId");
+                    b.HasIndex("ProductEventId");
+
+                    b.HasIndex("SectorId");
 
                     b.HasIndex("UserId");
 
@@ -463,6 +541,38 @@ namespace iticket.Migrations
                     b.ToTable("Venues");
                 });
 
+            modelBuilder.Entity("Iticket.Core.Entities.Wishlist", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Wishlist");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -595,6 +705,47 @@ namespace iticket.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("BasketBasketItem", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.BasketItem", null)
+                        .WithMany()
+                        .HasForeignKey("BasketItemsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Iticket.Core.Entities.Basket", null)
+                        .WithMany()
+                        .HasForeignKey("BasketsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.Basket", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.User", "User")
+                        .WithOne("Basket")
+                        .HasForeignKey("Iticket.Core.Entities.Basket", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.BasketItem", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.Product", null)
+                        .WithMany("BasketItems")
+                        .HasForeignKey("ProductId");
+
+                    b.HasOne("Iticket.Core.Entities.Ticket", "Ticket")
+                        .WithMany()
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ticket");
+                });
+
             modelBuilder.Entity("Iticket.Core.Entities.Hall", b =>
                 {
                     b.HasOne("Iticket.Core.Entities.Venues", "Venues")
@@ -613,6 +764,10 @@ namespace iticket.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Iticket.Core.Entities.Wishlist", null)
+                        .WithMany("Products")
+                        .HasForeignKey("WishlistId");
 
                     b.Navigation("Category");
                 });
@@ -636,17 +791,6 @@ namespace iticket.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Iticket.Core.Entities.Seat", b =>
-                {
-                    b.HasOne("Iticket.Core.Entities.Sector", "Sector")
-                        .WithMany("Seats")
-                        .HasForeignKey("SectorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Sector");
-                });
-
             modelBuilder.Entity("Iticket.Core.Entities.Sector", b =>
                 {
                     b.HasOne("Iticket.Core.Entities.Hall", "Halls")
@@ -660,9 +804,15 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Ticket", b =>
                 {
-                    b.HasOne("Iticket.Core.Entities.Seat", "Seat")
+                    b.HasOne("Iticket.Core.Entities.ProductEvent", "ProductEvent")
                         .WithMany("Tickets")
-                        .HasForeignKey("SeatId")
+                        .HasForeignKey("ProductEventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Iticket.Core.Entities.Sector", "Sector")
+                        .WithMany("Tickets")
+                        .HasForeignKey("SectorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -670,7 +820,20 @@ namespace iticket.Migrations
                         .WithMany("Tickets")
                         .HasForeignKey("UserId");
 
-                    b.Navigation("Seat");
+                    b.Navigation("ProductEvent");
+
+                    b.Navigation("Sector");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.Wishlist", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.User", "User")
+                        .WithOne("Wishlist")
+                        .HasForeignKey("Iticket.Core.Entities.Wishlist", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -740,27 +903,40 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Product", b =>
                 {
+                    b.Navigation("BasketItems");
+
                     b.Navigation("ProductEvents");
                 });
 
-            modelBuilder.Entity("Iticket.Core.Entities.Seat", b =>
+            modelBuilder.Entity("Iticket.Core.Entities.ProductEvent", b =>
                 {
                     b.Navigation("Tickets");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.Sector", b =>
                 {
-                    b.Navigation("Seats");
+                    b.Navigation("Tickets");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.User", b =>
                 {
+                    b.Navigation("Basket")
+                        .IsRequired();
+
                     b.Navigation("Tickets");
+
+                    b.Navigation("Wishlist")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.Venues", b =>
                 {
                     b.Navigation("Halls");
+                });
+
+            modelBuilder.Entity("Iticket.Core.Entities.Wishlist", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

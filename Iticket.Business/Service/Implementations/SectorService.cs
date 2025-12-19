@@ -2,44 +2,48 @@
 using Iticket.Business.Dto.Request;
 using Iticket.Business.Dto.Response;
 using Iticket.Business.Service.Interfaces;
+using Iticket.Core;
 using Iticket.Core.Entities;
 using Iticket.Data.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Iticket.Business.Service.Implementations
 {
     public class SectorService : ISectorService
     {
-        private readonly AppDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        
 
-        public SectorService(AppDbContext context, IMapper mapper)
+        public SectorService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
             _mapper = mapper;
+            
         }
 
         public async Task Create(SectorRequestDto request)
         {
             Sector entity = _mapper.Map<Sector>(request);
-            await _context.Sectors.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.SectorRepository.AddAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task Delete(int id)
         {
-            var entity = await _context.Sectors.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.SectorRepository.GetAsync(n => n.Id == id);
 
             if (entity is null)
                 throw new Exception("Sector not found!");
 
-            _context.Sectors.Remove(entity);
-            await _context.SaveChangesAsync();
+            await _unitOfWork.SectorRepository.DeleteAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task<List<SectorResponse>> GetAll()
         {
-            var entities = await _context.Sectors.ToListAsync();
+            var entities = await _unitOfWork.SectorRepository.GetAllAsync();
 
             if (entities is null)
                 throw new Exception("Sector not found!");
@@ -50,7 +54,7 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task<SectorResponse> Get(int id)
         {
-            var entity = await _context.Sectors.FirstOrDefaultAsync(n => n.Id == id);
+            var entity = await _unitOfWork.SectorRepository.GetAsync(n => n.Id == id);
 
             if (entity is null)
                 throw new Exception("Sector not found!");

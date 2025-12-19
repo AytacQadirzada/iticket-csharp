@@ -11,5 +11,6 @@ namespace Iticket.Core.Entities
         public DateTime? EventDate { get; set; }
         public int HallId { get; set; }
         public Hall Hall { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
     }
 }

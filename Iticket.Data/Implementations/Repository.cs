@@ -31,13 +31,34 @@ private readonly AppDbContext? _context;
 #pragma warning restore CS8603 // Possible null reference return.
     }
 
-    public async Task<List<TEntity>> GetAllAsync<TOrderBy>(Expression<Func<TEntity, TOrderBy>> orderBy, Expression<Func<TEntity, bool>>? predicate = null, params string[] includes)
+    public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? predicate = null, params string[]? includes)
     {
         var query = GetQuery(includes);
 
         return predicate is null
-            ? await query.OrderByDescending(orderBy).ToListAsync()
-            : await query.Where(predicate).OrderByDescending(orderBy).ToListAsync();
+            ? await query.ToListAsync()
+            : await query.Where(predicate).ToListAsync();
+    }
+
+    public async Task<List<TEntity>> GetAllSortedAsync<TOrderBy>(Expression<Func<TEntity, TOrderBy>>? orderBy = null ,bool isASC = true ,Expression<Func<TEntity, bool>>? predicate = null, params string[]? includes)
+    {
+        var query = GetQuery(includes);
+
+        if (orderBy is not null)
+        {
+            if (isASC)
+            {
+                query.OrderBy(orderBy);
+            }
+            else
+            {
+                query.OrderByDescending(orderBy);
+            }
+        }
+
+        return predicate is null
+            ? await query.ToListAsync()
+            : await query.Where(predicate).ToListAsync();
     }
 
     //public async Task<List<TEntity>> PaginationAsync<TOrderBy>(Expression<Func<TEntity, TOrderBy>> orderBy, Expression<Func<TEntity, bool>>? predicate = null, int skip = 0, int take = int.MaxValue, params string[] includes)
@@ -49,11 +70,11 @@ private readonly AppDbContext? _context;
     //        : await query.Where(predicate).OrderByDescending(orderBy).Skip(skip).Take(take).ToListAsync();
     //}
 
-    public async Task CreateAsync(TEntity entity)
+    public async Task AddAsync(TEntity entity)
     {
         var entry = _context.Entry(entity);
         entry.State = EntityState.Added;
-        await _context.SaveChangesAsync();
+        //await _context.SaveChangesAsync();
     }
 
     public async Task UpdateAsync(TEntity entity)

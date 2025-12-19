@@ -13,6 +13,5 @@ namespace Iticket.Business.Dto.Response
         public User User { get; set; }
         public double Price { get; set; }
         public string Number { get; set; }
-        public SeatResponse Seat { get; set; }
     }
 }
