@@ -11,8 +11,7 @@ namespace Iticket.Business.Service.Interfaces
 {
     public interface IWishlistService
     {
-        public Task<WishlistResponse> Get(int id);
-        public Task AddItem(int wishlistId, int productId);
-        public Task RemoveItem(int wishlistId, int productId);
+        public Task<WishlistResponse> Get(string userId);
+        public Task AddOrRemoveItem(string userId, int productId);
     }
 }

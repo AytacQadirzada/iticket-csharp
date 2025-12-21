@@ -34,13 +34,18 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task Create(ProductRequestDto request)
         {
-            foreach (var pe in request.ProductEvents)
-            {
-                var productEvent = await _unitOfWork.ProductEventRepository.GetAsync(n => n.EventDate == pe.EventDate && n.HallId == pe.HallId, "Hall");
+            //var hallId = await _unitOfWork.SectorRepository.GetAsync( n => n.Id == request.ProductEvents.FirstOrDefault().SectorPrices.FirstOrDefault().SectorId).HallId;
+            int sectorId = request.ProductEvents.SelectMany(pe => pe.SectorPrices).First(sp => sp.SectorId > 0).SectorId;
+            Sector sectorEntity = await _unitOfWork.SectorRepository.GetAsync(n => n.Id == sectorId);
+            int hallId = sectorEntity.HallId;
+            
+            //foreach (var pe in request.ProductEvents)
+            //{
+            //    var productEvent = await _unitOfWork.ProductEventRepository.GetAsync(n => n.EventDate == pe.EventDate && n.HallId == pe.HallId, "Hall");
 
-                if (productEvent is not null)
-                    throw new BadHttpRequestException("Bu tarixde tedbir movcuddur");
-            }
+            //    if (productEvent is not null)
+            //        throw new BadHttpRequestException("Bu tarixde tedbir movcuddur");
+            //}
 
             Product entity = _mapper.Map<Product>(request);
                     entity.ProductEvents = new List<ProductEvent>();
@@ -50,7 +55,7 @@ namespace Iticket.Business.Service.Implementations
 
                 ProductEvent productEvent1 = _mapper.Map<ProductEvent>(productEvent);
 
-                Hall hall = await _unitOfWork.HallRepository.GetAsync(n => n.Id == productEvent.HallId, "Sectors", "Venues" );
+                Hall hall = await _unitOfWork.HallRepository.GetAsync(n => n.Id == hallId, "Sectors", "Venues" );
                
                 var sectors = hall.Sectors;
                 foreach (var sector in sectors)

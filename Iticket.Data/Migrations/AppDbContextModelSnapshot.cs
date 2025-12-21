@@ -242,14 +242,9 @@ namespace iticket.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("text");
 
-                    b.Property<int?>("WishlistId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("WishlistId");
 
                     b.ToTable("Products");
                 });
@@ -275,9 +270,6 @@ namespace iticket.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("HallId")
-                        .HasColumnType("integer");
-
                     b.Property<double>("MinPrice")
                         .HasColumnType("double precision");
 
@@ -291,8 +283,6 @@ namespace iticket.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("HallId");
 
                     b.HasIndex("ProductId");
 
@@ -705,6 +695,21 @@ namespace iticket.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ProductWishlist", b =>
+                {
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("WishlistsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ProductsId", "WishlistsId");
+
+                    b.HasIndex("WishlistsId");
+
+                    b.ToTable("ProductWishlist");
+                });
+
             modelBuilder.Entity("BasketBasketItem", b =>
                 {
                     b.HasOne("Iticket.Core.Entities.BasketItem", null)
@@ -765,28 +770,16 @@ namespace iticket.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Iticket.Core.Entities.Wishlist", null)
-                        .WithMany("Products")
-                        .HasForeignKey("WishlistId");
-
                     b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Iticket.Core.Entities.ProductEvent", b =>
                 {
-                    b.HasOne("Iticket.Core.Entities.Hall", "Hall")
-                        .WithMany("ProductEvents")
-                        .HasForeignKey("HallId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Iticket.Core.Entities.Product", "Product")
                         .WithMany("ProductEvents")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Hall");
 
                     b.Navigation("Product");
                 });
@@ -889,6 +882,21 @@ namespace iticket.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ProductWishlist", b =>
+                {
+                    b.HasOne("Iticket.Core.Entities.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Iticket.Core.Entities.Wishlist", null)
+                        .WithMany()
+                        .HasForeignKey("WishlistsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Iticket.Core.Entities.Category", b =>
                 {
                     b.Navigation("Products");
@@ -896,8 +904,6 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Hall", b =>
                 {
-                    b.Navigation("ProductEvents");
-
                     b.Navigation("Sectors");
                 });
 
@@ -932,11 +938,6 @@ namespace iticket.Migrations
             modelBuilder.Entity("Iticket.Core.Entities.Venues", b =>
                 {
                     b.Navigation("Halls");
-                });
-
-            modelBuilder.Entity("Iticket.Core.Entities.Wishlist", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

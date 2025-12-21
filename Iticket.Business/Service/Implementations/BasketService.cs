@@ -42,6 +42,8 @@ public class BasketService : IBasketService
         };
         basket.BasketItems.Add(basketItem);
 
+        await _unitOfWork.SaveAsync();
+
     }
 
     public Task AddItem(int basketId, int ticketId)

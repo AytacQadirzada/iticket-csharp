@@ -26,40 +26,39 @@ public class WishlistService : IWishlistService
 
 
     }
-    public async Task AddItem(int wishlistId, int productId)
+    public async Task AddOrRemoveItem(string userId, int productId)
     {
-        Wishlist wishlist = await _unitOfWork.WishlistRepository.GetAsync(n => n.Id == wishlistId, "Products");
-        Product product = await _unitOfWork.ProductRepository.GetAsync(n => n.Id == productId);
-        foreach (var item in wishlist.Products)
-        {
-            if (item.Id != product.Id) {
-                wishlist.Products.Add(product);
-            }
+        Wishlist wishlist = await _unitOfWork.WishlistRepository
+            .GetAsync(w => w.UserId == userId, "Products");
 
+        Product product = await _unitOfWork.ProductRepository
+            .GetAsync(p => p.Id == productId);
+
+        if (wishlist.Products == null)
+            wishlist.Products = new List<Product>();
+
+        var existingProduct = wishlist.Products
+            .FirstOrDefault(p => p.Id == productId);
+
+        if (existingProduct != null)
+        {
+            wishlist.Products.Remove(existingProduct);
         }
+        else
+        {
+            wishlist.Products.Add(product);
+        }
+
         await _unitOfWork.WishlistRepository.UpdateAsync(wishlist);
+        await _unitOfWork.SaveAsync();
     }
 
-    public async Task<WishlistResponse> Get(int id)
+
+    public async Task<WishlistResponse> Get(string userId)
     {
-        Wishlist entity = await _unitOfWork.WishlistRepository.GetAsync(n => n.Id == id, "Products");
+        Wishlist entity = await _unitOfWork.WishlistRepository.GetAsync(n => n.UserId == userId, "Products");
         WishlistResponse wishlist = _mapper.Map<WishlistResponse>(entity);
         return wishlist;
 
-    }
-
-    public async Task RemoveItem(int wishlistId, int productId)
-    {
-        Wishlist wishlist = await _unitOfWork.WishlistRepository.GetAsync(n => n.Id == wishlistId, "Products");
-        Product product = await _unitOfWork.ProductRepository.GetAsync(n => n.Id == productId);
-        foreach (var item in wishlist.Products)
-        {
-            if (item.Id == product.Id)
-            {
-                wishlist.Products.Remove(product);
-            }
-
-        }
-        await _unitOfWork.WishlistRepository.UpdateAsync(wishlist);
     }
 }

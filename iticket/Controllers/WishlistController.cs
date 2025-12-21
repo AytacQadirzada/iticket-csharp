@@ -15,22 +15,17 @@ public class WishlistController : Controller
         _wishlistService = wishlistService;
     }
 
-    [HttpGet("[action]/{id}")]
-    public async Task<WishlistResponse> Get( int id)
+    [HttpGet("[action]/{userId}")]
+    public async Task<WishlistResponse> Get(string userId)
     {
-        return await _wishlistService.Get(id);
+        return await _wishlistService.Get(userId);
     }
 
     [HttpPost("[action]")]
-    public async Task AddItem([FromQuery] int wishlistId, [FromQuery] int productId){
-        await _wishlistService.AddItem(wishlistId, productId);
+    public async Task AddOrRemoveItem([FromQuery] string userId, [FromQuery] int productId){
+        await _wishlistService.AddOrRemoveItem(userId, productId);
     }
 
-    [HttpPost("[action]")]
-    public async Task RemoveItem([FromQuery] int wishlistId,[FromQuery] int productId)
-    {
-        await _wishlistService.RemoveItem(wishlistId, productId);
-    }
 
 
 }

@@ -16,7 +16,8 @@ namespace Iticket.Business.Service.Interfaces
 {
     public interface IAuthService
     {
-        Task Register([FromBody] RegisterRequestDto register);
-        Task<LoginResponse> Login([FromBody] LoginRequestDto login);
+        Task Register(RegisterRequestDto register);
+        Task<LoginResponse> Login(LoginRequestDto login);
+        Task CreateRoles();
     }
 }

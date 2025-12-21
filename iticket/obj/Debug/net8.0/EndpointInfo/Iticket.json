@@ -84,6 +84,18 @@
         }
       }
     },
+    "/api/Auth/createroles": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Category/GetAll": {
       "get": {
         "tags": [
@@ -787,19 +799,18 @@
         }
       }
     },
-    "/api/Wishlist/Get/{id}": {
+    "/api/Wishlist/Get/{userId}": {
       "get": {
         "tags": [
           "Wishlist"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -827,48 +838,17 @@
         }
       }
     },
-    "/api/Wishlist/AddItem": {
+    "/api/Wishlist/AddOrRemoveItem": {
       "post": {
         "tags": [
           "Wishlist"
         ],
         "parameters": [
           {
-            "name": "wishlistId",
+            "name": "userId",
             "in": "query",
             "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "productId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Wishlist/RemoveItem": {
-      "post": {
-        "tags": [
-          "Wishlist"
-        ],
-        "parameters": [
-          {
-            "name": "wishlistId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           },
           {
@@ -1118,13 +1098,6 @@
           },
           "venues": {
             "$ref": "#/components/schemas/Venues"
-          },
-          "productEvents": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductEvent"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1181,6 +1154,10 @@
       "LoginResponse": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
           "token": {
             "type": "string",
             "nullable": true
@@ -1280,6 +1257,13 @@
               "$ref": "#/components/schemas/BasketItem"
             },
             "nullable": true
+          },
+          "wishlists": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Wishlist"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1327,13 +1311,6 @@
             "format": "date-time",
             "nullable": true
           },
-          "hallId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "hall": {
-            "$ref": "#/components/schemas/Hall"
-          },
           "tickets": {
             "type": "array",
             "items": {
@@ -1359,10 +1336,6 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
-          },
-          "hallId": {
-            "type": "integer",
-            "format": "int32"
           },
           "sectorPrices": {
             "type": "array",
