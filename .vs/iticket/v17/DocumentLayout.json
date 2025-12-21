@@ -174,8 +174,7 @@
               "RelativeToolTip": "Iticket.Core\\Entities\\ProductEvent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:22:57.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T22:22:57.313Z"
             },
             {
               "$type": "Document",
@@ -187,8 +186,7 @@
               "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\ProductService.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAcwGAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T16:25:20.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T16:25:20.379Z"
             },
             {
               "$type": "Document",
@@ -200,8 +198,7 @@
               "RelativeToolTip": "Iticket.Business\\Service\\Interfaces\\IWishlistService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAWwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:26:58.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T22:26:58.168Z"
             },
             {
               "$type": "Document",
@@ -211,7 +208,7 @@
               "RelativeDocumentMoniker": "Iticket.Business\\Service\\Implementations\\WishlistService.cs",
               "ToolTip": "C:\\Users\\Gultac Gadirzade\\source\\repos\\iticket-csharp\\Iticket.Business\\Service\\Implementations\\WishlistService.cs",
               "RelativeToolTip": "Iticket.Business\\Service\\Implementations\\WishlistService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwBgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAA1wC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-19T17:39:21.411Z",
               "EditorCaption": ""
@@ -226,8 +223,7 @@
               "RelativeToolTip": "Iticket.Core\\Entities\\Product.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwBMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:41:11.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T22:41:11.921Z"
             },
             {
               "$type": "Document",
@@ -239,8 +235,7 @@
               "RelativeToolTip": "iticket\\Controllers\\WishlistController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwBoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:23:50.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T22:23:50.227Z"
             },
             {
               "$type": "Document",
@@ -252,8 +247,7 @@
               "RelativeToolTip": "iticket\\Program.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAnwEgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T11:18:30.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T11:18:30.807Z"
             },
             {
               "$type": "Document",
@@ -265,8 +259,7 @@
               "RelativeToolTip": "Iticket.Data\\Migrations\\20251221114851_AddProductWishlist.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T11:50:39.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T11:50:39.761Z"
             },
             {
               "$type": "Document",
@@ -290,8 +283,7 @@
               "RelativeToolTip": "Iticket.Data\\Migrations\\20251219131449_ProductEventAddTickets.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T11:20:34.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T11:20:34.984Z"
             },
             {
               "$type": "Document",

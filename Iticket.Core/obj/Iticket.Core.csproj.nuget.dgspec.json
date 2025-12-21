@@ -11,7 +11,7 @@
         "projectName": "Iticket.Core",
         "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
         "packagesPath": "C:\\Users\\Gultac Gadirzade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gultac Gadirzade\\source\\repos\\iticket-csharp\\Iticket.Core\\obj\\",
+        "outputPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
