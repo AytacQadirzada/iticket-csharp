@@ -36,7 +36,7 @@ public class AuthService : IAuthService
         _cache = cache;
         this.mailSend = mailSend;
     }
-    public async Task Register([FromBody] RegisterRequestDto register)
+    public async Task Register(RegisterRequestDto register)
     {
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         User isEmailExsist = await _userManager.FindByEmailAsync(register.Email);
@@ -82,7 +82,7 @@ public class AuthService : IAuthService
     }
 
 
-    public async Task<LoginResponse> Login([FromBody] LoginRequestDto login)
+    public async Task<LoginResponse> Login(LoginRequestDto login)
     {
         User user = await _userManager.FindByEmailAsync(login.Email);
         if (user == null) throw new NotFoundException("User not found");
@@ -96,6 +96,7 @@ public class AuthService : IAuthService
 #pragma warning disable CS8601 // Possible null reference assignment.
         return new LoginResponse
         {
+            Id = user.Id,
             Token = jwtToken,
             FirstName = user.FirstName,
             LastName = user.LastName,
@@ -106,6 +107,19 @@ public class AuthService : IAuthService
     public UserManager<User> Get_userManager()
     {
         return _userManager;
+    }
+    public async Task CreateRoles()
+    {
+        foreach (var item in Enum.GetValues(typeof(Roles)))
+        {
+            if (!(await _roleManager.RoleExistsAsync(item.ToString())))
+            {
+                await _roleManager.CreateAsync(new IdentityRole
+                {
+                    Name = item.ToString()
+                });
+            }
+        }
     }
 
 

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Iticket.Business.Dto.Request;
 using Iticket.Business.Dto.Response;
+using Iticket.Business.Expection;
 using Iticket.Business.Profiles;
 using Iticket.Business.Service.Interfaces;
 using Iticket.Core;
@@ -26,36 +27,70 @@ public class BasketService : IBasketService
         _mapper = mapper;
         
     }
-    public async Task AddItem(int basketId, string ticketId)
+    public async Task AddItem(AddItem item)
     {
-        var basket = await _unitOfWork.BasketRepository.GetAsync(n => n.Id == basketId);
-        var ticket = await _unitOfWork.TicketRepository.GetAsync(n => n.Id.Equals(ticketId));
-
-        foreach (var item in basket.BasketItems)
-        {
-        }
+        Basket basket = await _unitOfWork.BasketRepository.GetAsync(n => n.UserId == item.UserId);
+        List<Ticket> tickets = await _unitOfWork.TicketRepository.GetAllAsync(predicate: n => n.isBooked == false && n.ProductEventId == item.ProductEventId && n.SectorId == item.SectorId);
+        if (basket.BasketItems is null)
+            basket.BasketItems = new List<BasketItem>();
+        if (item.TicketId is not null) { 
+        Ticket ticket = await _unitOfWork.TicketRepository.GetAsync(n => n.Id.Equals(item.TicketId));
         var basketItem = new BasketItem()
         {
             Ticket = ticket,
-            Count = 1,
             Price = ticket.Price
         };
         basket.BasketItems.Add(basketItem);
+        }
+        else
+        {
+            if (tickets.Count >= item.Quantity)
+            {
+                for (var i = 0; i < item.Quantity; i++)
+                {
+                    Ticket ticketItem = tickets.ElementAt(i);
+                    var basketItem = new BasketItem() { 
+                        Ticket = ticketItem,
+                        Price = ticketItem.Price
+                    };
+                    basket.BasketItems.Add(basketItem);
+                }
+            }
+            else
+            {
+                throw new NotFoundException("Daxil olunan sayda bilet yoxdur!");
+            }
+        }
+        await _unitOfWork.BasketRepository.UpdateAsync(basket);
+
+        await _unitOfWork.SaveAsync();
 
     }
 
-    public Task AddItem(int basketId, int ticketId)
+    public async Task<BasketResponse> Get(string userId)
     {
-        throw new NotImplementedException();
+        Basket basket = await _unitOfWork.BasketRepository.GetAsync(n => n.UserId == userId, "BasketItems","BasketItems.Ticket");
+        BasketResponse response = _mapper.Map<BasketResponse>(basket);
+        return response;
     }
 
-    public Task<BasketResponse> Get(int id)
+    public async Task RemoveItem(string userId, int basketItemId)
     {
-        throw new NotImplementedException();
-    }
+        Basket basket = await _unitOfWork.BasketRepository.GetAsync(n => n.UserId == userId, "BasketItems", "BasketItems.Ticket");
 
-    public Task RemoveItem(int basketId, int productId)
-    {
-        throw new NotImplementedException();
+        var existingProduct = basket.BasketItems
+            .FirstOrDefault(n => n.Id == basketItemId);
+        if (existingProduct == null)
+        {
+            throw new NotFoundException("Bu bilet sebetde yoxdur!");
+        }
+        else
+        {
+            basket.BasketItems.Remove(existingProduct);
+        }
+
+        await _unitOfWork.BasketRepository.UpdateAsync(basket);
+        await _unitOfWork.SaveAsync();
+
     }
 }

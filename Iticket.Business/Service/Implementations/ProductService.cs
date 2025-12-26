@@ -34,13 +34,18 @@ namespace Iticket.Business.Service.Implementations
 
         public async Task Create(ProductRequestDto request)
         {
-            foreach (var pe in request.ProductEvents)
-            {
-                var productEvent = await _unitOfWork.ProductEventRepository.GetAsync(n => n.EventDate == pe.EventDate && n.HallId == pe.HallId, "Hall");
+            //var hallId = await _unitOfWork.SectorRepository.GetAsync( n => n.Id == request.ProductEvents.FirstOrDefault().SectorPrices.FirstOrDefault().SectorId).HallId;
+            int sectorId = request.ProductEvents.SelectMany(pe => pe.SectorPrices).First(sp => sp.SectorId > 0).SectorId;
+            Sector sectorEntity = await _unitOfWork.SectorRepository.GetAsync(n => n.Id == sectorId);
+            int hallId = sectorEntity.HallId;
+            
+            //foreach (var pe in request.ProductEvents)
+            //{
+            //    var productEvent = await _unitOfWork.ProductEventRepository.GetAsync(n => n.EventDate == pe.EventDate && n.HallId == pe.HallId, "Hall");
 
-                if (productEvent is not null)
-                    throw new BadHttpRequestException("Bu tarixde tedbir movcuddur");
-            }
+            //    if (productEvent is not null)
+            //        throw new BadHttpRequestException("Bu tarixde tedbir movcuddur");
+            //}
 
             Product entity = _mapper.Map<Product>(request);
                     entity.ProductEvents = new List<ProductEvent>();
@@ -50,7 +55,7 @@ namespace Iticket.Business.Service.Implementations
 
                 ProductEvent productEvent1 = _mapper.Map<ProductEvent>(productEvent);
 
-                Hall hall = await _unitOfWork.HallRepository.GetAsync(n => n.Id == productEvent.HallId, "Sectors", "Venues" );
+                Hall hall = await _unitOfWork.HallRepository.GetAsync(n => n.Id == hallId, "Sectors", "Venues" );
                
                 var sectors = hall.Sectors;
                 foreach (var sector in sectors)
@@ -194,5 +199,56 @@ namespace Iticket.Business.Service.Implementations
             var result = _mapper.Map<ProductResponse>(entity);
             return result;
         }
+
+        public async Task<List<ProductResponse>> GetFilter(FilterRequest request)
+        {
+            List<Product> products = new List<Product>();
+            if(request.VenuesId == null && request.ProductEventDate == null)
+            {
+                products = await _unitOfWork.ProductRepository.GetAllAsync(n => n.MinPrice >= request.MinPrice && n.MinPrice <= request.MaxPrice);
+            }
+            else if(request.ProductEventDate == null)
+            {
+                List<Product> productEntity = await _unitOfWork.ProductRepository.GetAllAsync(n => n.MinPrice >= request.MinPrice && n.MinPrice <= request.MaxPrice, "ProductEvents", "ProductEvents.Tickets", "ProductEvents.Tickets.Sector", "ProductEvents.Tickets.Sector.Halls");
+                foreach(var product in productEntity)
+                {
+                    foreach(var productEvent in product.ProductEvents)
+                    {
+                        if(productEvent.Tickets.FirstOrDefault().Sector.Halls.VenueId == request.VenuesId)
+                        {
+                            products.Add(product);
+                        }
+                    }
+                }
+            }
+            else if (request.VenuesId == null)
+            {
+                products = await _unitOfWork.ProductRepository.GetAllAsync(n => n.MinPrice >= request.MinPrice && n.MinPrice <= request.MaxPrice && n.StartDate == request.ProductEventDate);
+            }
+            List<ProductResponse> response = _mapper.Map<List<ProductResponse>>(products);
+            return response;
+        }
+        public async Task<ProductResponse> GetByTitle(string title) 
+        {
+            var product = await _unitOfWork.ProductRepository.GetAsync(n => n.Title == title);
+            var response = _mapper.Map<ProductResponse>(product);
+            return response;
+        }
+
+        public async Task<List<ProductResponse>> GetByCategory(string slug)
+        {
+            List<Product> products = new List<Product>();
+            var productsEntity = await _unitOfWork.ProductRepository.GetAllAsync(includes: "Category");
+            foreach(var product in productsEntity)
+            {
+                if(product.Category.Slug == slug)
+                {
+                    products.Add(product);
+                }
+            }
+            var response = _mapper.Map<List<ProductResponse>>(products);
+            return response;
+        }
     }
+
 }

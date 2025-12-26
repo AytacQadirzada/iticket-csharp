@@ -12,6 +12,6 @@ public class ProductEventRequestDto
     public string EventName { get; set; }
     public double MinPrice { get; set; }
     public DateTime? EventDate { get; set; }
-    public int HallId { get; set; } 
+    //public int HallId { get; set; } 
     public ICollection<SectorPriceRequestDto> SectorPrices { get; set; }
 }

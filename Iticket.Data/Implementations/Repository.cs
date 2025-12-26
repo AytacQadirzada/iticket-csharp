@@ -72,23 +72,19 @@ private readonly AppDbContext? _context;
 
     public async Task AddAsync(TEntity entity)
     {
-        var entry = _context.Entry(entity);
-        entry.State = EntityState.Added;
-        //await _context.SaveChangesAsync();
+        await _context.Set<TEntity>().AddAsync(entity);
     }
 
     public async Task UpdateAsync(TEntity entity)
     {
         var entry = _context.Entry(entity);
         entry.State = EntityState.Modified;
-        await _context.SaveChangesAsync();
     }
 
     public async Task DeleteAsync(TEntity entity)
     {
         var entry = _context.Entry(entity);
         entry.State = EntityState.Deleted;
-        await _context.SaveChangesAsync();
     }
 
     private IQueryable<TEntity> GetQuery(params string[] includes)

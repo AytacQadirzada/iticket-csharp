@@ -11,7 +11,7 @@ public interface IUnitOfWork
     IProductRepository ProductRepository { get; }
     ISectorRepository SectorRepository { get; }
     ITicketRepository TicketRepository { get; }
-    IVenuesRepository VenuesRepository { get; }
+    IVenueRepository VenueRepository { get; }
     IWishlistRepository WishlistRepository { get; }
     IBasketItemRepository BasketItemRepository { get; }
     IBasketRepository BasketRepository { get; }

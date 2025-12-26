@@ -27,14 +27,7 @@ namespace Iticket.Business.Service.Implementations
         {
             Hall entity = _mapper.Map<Hall>(request);
             await _unitOfWork.HallRepository.AddAsync(entity);
-            
-
-
-
-
-
-
-
+            await _unitOfWork.SaveAsync();
 
         }
 

@@ -20,7 +20,7 @@ public class UnitOfWork : IUnitOfWork
     private IProductEventRepository _productEventRepository;
     private IProductRepository _productRepository;
     private ISectorRepository _sectorRepository;
-    private IVenuesRepository _venuesRepository;
+    private IVenueRepository _venueRepository;
     private IBasketRepository _basketRepository;
     private IBasketItemRepository _basketItemRepository;
     private IWishlistRepository _wishlistRepository;
@@ -37,7 +37,7 @@ public class UnitOfWork : IUnitOfWork
     public IProductRepository ProductRepository => _productRepository ??= new ProductRepository(_context);
     public ISectorRepository SectorRepository => _sectorRepository ??= new SectorRepository(_context);
     public ITicketRepository TicketRepository => _ticketRepository ??= new TicketRepository(_context);
-    public IVenuesRepository VenuesRepository => _venuesRepository ??= new VenuesRepository(_context);
+    public IVenueRepository VenueRepository => _venueRepository ??= new VenueRepository(_context);
     public IBasketItemRepository BasketItemRepository => _basketItemRepository ??= new BasketItemRepository(_context);
     public IBasketRepository BasketRepository => _basketRepository ??= new BasketRepository(_context);
     public IWishlistRepository WishlistRepository => _wishlistRepository ??= new WishlistRepository(_context);

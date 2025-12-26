@@ -42,18 +42,9 @@ public class AuthController : Controller
 
 
 
-    //[HttpPost("createroles")]
-    //public async Task CreateRoles()
-    //{
-    //    foreach (var item in Enum.GetValues(typeof(Roles)))
-    //    {
-    //        if (!(await _roleManager.RoleExistsAsync(item.ToString())))
-    //        {
-    //            await _roleManager.CreateAsync(new IdentityRole
-    //            {
-    //                Name = item.ToString()
-    //            });
-    //        }
-    //    }
-    //}
+    [HttpPost("createroles")]
+    public async Task CreateRoles()
+    {
+        await _authService.CreateRoles();
+    }
 }

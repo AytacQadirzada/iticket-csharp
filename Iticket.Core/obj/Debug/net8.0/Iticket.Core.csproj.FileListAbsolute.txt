@@ -1,0 +1,52 @@
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.AssemblyReference.cache
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfoInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfo.cs
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.CoreCompileInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.sourcelink.json
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\bin\Debug\net8.0\Iticket.Core.deps.json
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\bin\Debug\net8.0\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\bin\Debug\net8.0\Iticket.Core.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\refint\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\Iticket.Core.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket\Iticket.Core\obj\Debug\net8.0\ref\Iticket.Core.dll
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.deps.json
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.dll
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.pdb
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.AssemblyReference.cache
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfoInputs.cache
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfo.cs
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.CoreCompileInputs.cache
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.sourcelink.json
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.dll
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\refint\Iticket.Core.dll
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.pdb
+C:\Users\Aytac Qadirzada\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\ref\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.deps.json
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.AssemblyReference.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfoInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfo.cs
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.CoreCompileInputs.cache
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.sourcelink.json
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\refint\Iticket.Core.dll
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.pdb
+C:\Users\aytac.gadirzade\source\repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\ref\Iticket.Core.dll
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.deps.json
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.dll
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\bin\Debug\net8.0\Iticket.Core.pdb
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.AssemblyReference.cache
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfoInputs.cache
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.AssemblyInfo.cs
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.csproj.CoreCompileInputs.cache
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.sourcelink.json
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.dll
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\refint\Iticket.Core.dll
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\Iticket.Core.pdb
+C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\Iticket.Core\obj\Debug\net8.0\ref\Iticket.Core.dll

@@ -100,7 +100,7 @@ builder.Services.AddScoped<IProductEventService, ProductEventService>();
 builder.Services.AddScoped<IHallService, HallService>();
 builder.Services.AddScoped<ISectorService, SectorService>();
 builder.Services.AddScoped<ITicketService, TicketService>();
-builder.Services.AddScoped<IVenuesService, VenuesService>();
+builder.Services.AddScoped<IVenueService, VenueService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IBasketService, BasketService>();

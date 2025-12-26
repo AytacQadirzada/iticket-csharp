@@ -18,7 +18,7 @@ namespace Iticket.Business.Service.Interfaces
         IProductService ProductService { get; }
         ISectorService SectorService { get; }
         ITicketService TicketService { get; }
-        IVenuesService VenuesService { get; }
+        IVenueService VenueService { get; }
         IWishlistService WishlistService { get; }
         IBasketService BasketService { get; }
     }

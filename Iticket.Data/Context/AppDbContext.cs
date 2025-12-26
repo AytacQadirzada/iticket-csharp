@@ -14,7 +14,7 @@ public class AppDbContext : IdentityDbContext<User>
     public DbSet<ProductEvent> ProductEvents { get; set; }
     public DbSet<Sector> Sectors { get; set; }
     public DbSet<Ticket> Tickets { get; set; }
-    public DbSet<Venues> Venues { get; set; }
+    public DbSet<Venue> Venues { get; set; }
     public DbSet<Basket> Baskets { get; set; }
     public DbSet<BasketItem> BasketItems { get; set; }
     public DbSet<Wishlist> Wishlist { get; set; }
