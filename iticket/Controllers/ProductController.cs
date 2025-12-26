@@ -38,10 +38,31 @@ public class ProductController : Controller
         return response;
     }
 
-    [HttpPost]
+    [HttpPost("[action]")]
     public async Task<IActionResult> Create(ProductRequestDto request)
     {
         await _productService.Create(request);
         return Ok();
+    }
+
+    [HttpPost("[action]")]
+    public async Task<List<ProductResponse>> GetFilter([FromBody] FilterRequest request)
+    {
+        var response = await _productService.GetFilter(request);
+        return response;
+    }
+
+    [HttpGet("[action]")]
+    public async Task<ProductResponse> GetByTitle([FromQuery] string title)
+    {
+        var response = await _productService.GetByTitle(title);
+        return response;
+
+    }
+    [HttpGet("[action]/slug")]
+    public async Task<List<ProductResponse>> GetByCategory(string slug)
+    {
+        var response = await _productService.GetByCategory(slug);
+        return response;
     }
 }

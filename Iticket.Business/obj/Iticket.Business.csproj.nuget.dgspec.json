@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {}
+    "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {
+    "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
+        "projectUniqueName": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
         "projectName": "Iticket.Business",
-        "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
-        "packagesPath": "C:\\Users\\Gultac Gadirzade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\obj\\",
+        "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\Iticket.Business.csproj",
+        "packagesPath": "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gultac Gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aytac.gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj": {
-                "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj"
+              "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj": {
+                "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj"
               }
             }
           }
@@ -48,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -79,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj": {
+    "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
+        "projectUniqueName": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
         "projectName": "Iticket.Core",
-        "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
-        "packagesPath": "C:\\Users\\Gultac Gadirzade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\obj\\",
+        "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj",
+        "packagesPath": "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gultac Gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aytac.gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -123,7 +123,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -154,24 +154,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj": {
+    "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
+        "projectUniqueName": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
         "projectName": "Iticket.Data",
-        "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
-        "packagesPath": "C:\\Users\\Gultac Gadirzade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\obj\\",
+        "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\Iticket.Data.csproj",
+        "packagesPath": "C:\\Users\\aytac.gadirzade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gultac Gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aytac.gadirzade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -186,8 +186,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj": {
-                "projectPath": "C:\\Users\\Gultac Gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj"
+              "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj": {
+                "projectPath": "C:\\Users\\aytac.gadirzade\\Source\\Repos\\iticket-csharp\\Iticket.Core\\Iticket.Core.csproj"
               }
             }
           }
@@ -202,7 +202,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -235,7 +235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

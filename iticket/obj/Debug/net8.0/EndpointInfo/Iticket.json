@@ -96,6 +96,107 @@
         }
       }
     },
+    "/api/Basket/GetAll/{userId}": {
+      "get": {
+        "tags": [
+          "Basket"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasketResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasketResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasketResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basket/AddTisket": {
+      "post": {
+        "tags": [
+          "Basket"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItem"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItem"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Basket/RemoveTicket/{userId}/{basketItemId}": {
+      "delete": {
+        "tags": [
+          "Basket"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "basketItemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Category/GetAll": {
       "get": {
         "tags": [
@@ -205,115 +306,6 @@
         }
       }
     },
-    "/api/Hall/GetAll": {
-      "get": {
-        "tags": [
-          "Hall"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/HallResponse"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/HallResponse"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/HallResponse"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Hall/Get/{id}": {
-      "get": {
-        "tags": [
-          "Hall"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/HallResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HallResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HallResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Hall": {
-      "post": {
-        "tags": [
-          "Hall"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/HallRequestDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/HallRequestDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/HallRequestDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Product/GetAll": {
       "get": {
         "tags": [
@@ -392,7 +384,7 @@
         }
       }
     },
-    "/api/Product": {
+    "/api/Product/Create": {
       "post": {
         "tags": [
           "Product"
@@ -419,6 +411,148 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Product/GetFilter": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/GetByTitle": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/GetByCategory/slug": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -532,115 +666,6 @@
         }
       }
     },
-    "/api/Sector/GetAll": {
-      "get": {
-        "tags": [
-          "Sector"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SectorResponse"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SectorResponse"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SectorResponse"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Sector/Get/{id}": {
-      "get": {
-        "tags": [
-          "Sector"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/SectorResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SectorResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SectorResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Sector": {
-      "post": {
-        "tags": [
-          "Sector"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SectorRequestDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SectorRequestDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SectorRequestDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/UserConroller/SendOtp": {
       "post": {
         "tags": [
@@ -690,10 +715,10 @@
         }
       }
     },
-    "/api/Venues/GetAll": {
+    "/api/Venue/GetAll": {
       "get": {
         "tags": [
-          "Venues"
+          "Venue"
         ],
         "responses": {
           "200": {
@@ -703,7 +728,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/VenuesResponse"
+                    "$ref": "#/components/schemas/VenueResponse"
                   }
                 }
               },
@@ -711,7 +736,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/VenuesResponse"
+                    "$ref": "#/components/schemas/VenueResponse"
                   }
                 }
               },
@@ -719,7 +744,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/VenuesResponse"
+                    "$ref": "#/components/schemas/VenueResponse"
                   }
                 }
               }
@@ -728,10 +753,10 @@
         }
       }
     },
-    "/api/Venues/Get/{id}": {
+    "/api/Venue/Get/{id}": {
       "get": {
         "tags": [
-          "Venues"
+          "Venue"
         ],
         "parameters": [
           {
@@ -750,17 +775,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/VenuesResponse"
+                  "$ref": "#/components/schemas/VenueResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VenuesResponse"
+                  "$ref": "#/components/schemas/VenueResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VenuesResponse"
+                  "$ref": "#/components/schemas/VenueResponse"
                 }
               }
             }
@@ -768,26 +793,26 @@
         }
       }
     },
-    "/api/Venues": {
+    "/api/Venue": {
       "post": {
         "tags": [
-          "Venues"
+          "Venue"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VenuesRequestDto"
+                "$ref": "#/components/schemas/VenueRequestDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VenuesRequestDto"
+                "$ref": "#/components/schemas/VenueRequestDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VenuesRequestDto"
+                "$ref": "#/components/schemas/VenueRequestDto"
               }
             }
           }
@@ -870,6 +895,36 @@
   },
   "components": {
     "schemas": {
+      "AddItem": {
+        "required": [
+          "productEventId",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ticketId": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sectorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productEventId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Basket": {
         "type": "object",
         "properties": {
@@ -944,10 +999,6 @@
           "ticket": {
             "$ref": "#/components/schemas/Ticket"
           },
-          "count": {
-            "type": "integer",
-            "format": "int32"
-          },
           "price": {
             "type": "number",
             "format": "double"
@@ -956,6 +1007,40 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Basket"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BasketItemResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ticket": {
+            "$ref": "#/components/schemas/TicketResponse"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BasketResponse": {
+        "type": "object",
+        "properties": {
+          "basketItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BasketItemResponse"
             },
             "nullable": true
           }
@@ -1058,6 +1143,30 @@
         },
         "additionalProperties": false
       },
+      "FilterRequest": {
+        "type": "object",
+        "properties": {
+          "venuesId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productEventDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "minPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "maxPrice": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "Hall": {
         "type": "object",
         "properties": {
@@ -1092,12 +1201,12 @@
             },
             "nullable": true
           },
-          "venuesId": {
+          "venueId": {
             "type": "integer",
             "format": "int32"
           },
           "venues": {
-            "$ref": "#/components/schemas/Venues"
+            "$ref": "#/components/schemas/Venue"
           }
         },
         "additionalProperties": false
@@ -1109,9 +1218,12 @@
             "type": "string",
             "nullable": true
           },
-          "venuesId": {
-            "type": "integer",
-            "format": "int32"
+          "sectors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SectorRequestDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1612,10 +1724,6 @@
           },
           "sectorClassification": {
             "$ref": "#/components/schemas/SectorClassification"
-          },
-          "hallId": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1695,6 +1803,9 @@
             "type": "string",
             "nullable": true
           },
+          "isBooked": {
+            "type": "boolean"
+          },
           "sectorId": {
             "type": "integer",
             "format": "int32"
@@ -1708,6 +1819,27 @@
           },
           "productEvent": {
             "$ref": "#/components/schemas/ProductEvent"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TicketResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "number": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1823,7 +1955,7 @@
         },
         "additionalProperties": false
       },
-      "Venues": {
+      "Venue": {
         "type": "object",
         "properties": {
           "id": {
@@ -1880,7 +2012,7 @@
         },
         "additionalProperties": false
       },
-      "VenuesRequestDto": {
+      "VenueRequestDto": {
         "required": [
           "address",
           "mapLat",
@@ -1914,11 +2046,18 @@
           "mapLng": {
             "minLength": 1,
             "type": "string"
+          },
+          "halls": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HallRequestDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "VenuesResponse": {
+      "VenueResponse": {
         "type": "object",
         "properties": {
           "id": {

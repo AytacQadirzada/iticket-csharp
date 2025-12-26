@@ -2,6 +2,6 @@
 {
     public class BasketResponse
     {
-        public ICollection<BasketItemResponse> Products { get; set; }
+        public ICollection<BasketItemResponse> BasketItems { get; set; }
     }
 }

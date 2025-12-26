@@ -3,11 +3,11 @@ using Iticket.Business.Dto.Response;
 
 namespace Iticket.Business.Service.Interfaces
 {
-    public interface IVenuesService
+    public interface IVenueService
     {
-        public Task<List<VenuesResponse>> GetAll();
-        public Task<VenuesResponse> Get(int id);
-        public Task Create(VenuesRequestDto request);
+        public Task<List<VenueResponse>> GetAll();
+        public Task<VenueResponse> Get(int id);
+        public Task Create(VenueRequestDto request);
         public Task Delete(int id);
     }
 }

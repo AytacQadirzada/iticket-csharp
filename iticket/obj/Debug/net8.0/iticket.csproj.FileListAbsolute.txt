@@ -405,7 +405,6 @@ C:\Users\aytac.gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\re
 C:\Users\aytac.gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\Iticket.pdb
 C:\Users\aytac.gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\Iticket.genruntimeconfig.cache
 C:\Users\aytac.gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\ref\Iticket.dll
-C:\Users\aytac.gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\bin\Debug\net8.0\appsettings.json
 C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\bin\Debug\net8.0\Iticket.staticwebassets.endpoints.json
@@ -543,3 +542,4 @@ C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\I
 C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\Iticket.genruntimeconfig.cache
 C:\Users\Gultac Gadirzade\source\repos\iticket-csharp\iticket\obj\Debug\net8.0\ref\Iticket.dll
 C:\Users\Gultac Gadirzade\Source\Repos\iticket-csharp\iticket\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\aytac.gadirzade\Source\Repos\iticket-csharp\iticket\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

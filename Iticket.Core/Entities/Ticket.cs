@@ -10,6 +10,7 @@ public class Ticket : BaseAuditableEntity
     public string Number { get; set; }
     public string? RowNumber { get; set; }
     public string? ColumnNumber { get; set; }
+    public bool isBooked { get; set; }
     public int SectorId { get; set; }
     public Sector Sector { get; set; }
     public int ProductEventId { get; set; }

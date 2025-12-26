@@ -32,7 +32,7 @@ public class UnitOfWorkService : IUnitOfWorkService
     private IProductEventService _productEventService;
     private IProductService _productService;
     private ISectorService _sectorService;
-    private IVenuesService _venuesService;
+    private IVenueService _venueService;
     private IBasketService _basketService;
     private IWishlistService _wishlistService;
     private IAuthService _authService;
@@ -56,7 +56,7 @@ public class UnitOfWorkService : IUnitOfWorkService
     public IProductService ProductService => _productService ??= new ProductService(_unitOfWork, _mapper);
     public ISectorService SectorService => _sectorService ??= new SectorService(_unitOfWork, _mapper);
     public ITicketService TicketService => _ticketService ??= new TicketService(_unitOfWork, _mapper);
-    public IVenuesService VenuesService => _venuesService ??= new VenuesService(_unitOfWork, _mapper);
+    public IVenueService VenueService => _venueService ??= new VenueService(_unitOfWork, _mapper);
     public IBasketService BasketService => _basketService ??= new BasketService(_unitOfWork, _mapper);
     public IWishlistService WishlistService => _wishlistService ??= new WishlistService(_unitOfWork, _mapper);
 

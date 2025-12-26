@@ -80,9 +80,6 @@ namespace iticket.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Count")
-                        .HasColumnType("integer");
-
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
@@ -176,12 +173,12 @@ namespace iticket.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("text");
 
-                    b.Property<int>("VenuesId")
+                    b.Property<int>("VenueId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("VenuesId");
+                    b.HasIndex("VenueId");
 
                     b.ToTable("Halls");
                 });
@@ -377,6 +374,9 @@ namespace iticket.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("text");
 
+                    b.Property<bool>("isBooked")
+                        .HasColumnType("boolean");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProductEventId");
@@ -482,7 +482,7 @@ namespace iticket.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Iticket.Core.Entities.Venues", b =>
+            modelBuilder.Entity("Iticket.Core.Entities.Venue", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -753,9 +753,9 @@ namespace iticket.Migrations
 
             modelBuilder.Entity("Iticket.Core.Entities.Hall", b =>
                 {
-                    b.HasOne("Iticket.Core.Entities.Venues", "Venues")
+                    b.HasOne("Iticket.Core.Entities.Venue", "Venues")
                         .WithMany("Halls")
-                        .HasForeignKey("VenuesId")
+                        .HasForeignKey("VenueId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -935,7 +935,7 @@ namespace iticket.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Iticket.Core.Entities.Venues", b =>
+            modelBuilder.Entity("Iticket.Core.Entities.Venue", b =>
                 {
                     b.Navigation("Halls");
                 });

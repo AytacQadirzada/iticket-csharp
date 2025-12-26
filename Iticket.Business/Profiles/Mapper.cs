@@ -31,9 +31,11 @@ public class Mapper : Profile
         CreateMap<SectorRequestDto, Sector>();
         CreateMap<Ticket, TicketResponse>();
         CreateMap<TicketRequestDto, Ticket>();
-        CreateMap<Venues, VenuesResponse>();
-        CreateMap<VenuesRequestDto, Venues>();
+        CreateMap<Venue, VenueResponse>();
+        CreateMap<VenueRequestDto, Venue>();
         CreateMap<Wishlist, WishlistResponse>();
+        CreateMap<Basket, BasketResponse>();
+        CreateMap<BasketItem, BasketItemResponse>();
 
 
 

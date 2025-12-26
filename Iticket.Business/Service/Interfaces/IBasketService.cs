@@ -11,7 +11,7 @@ namespace Iticket.Business.Service.Interfaces;
 
 public interface IBasketService
 {
-    public Task<BasketResponse> Get(int id);
-    public Task AddItem(int basketId, int ticketId);
-    public Task RemoveItem(int basketId, int ticketId);
+    public Task<BasketResponse> Get(string userId);
+    public Task AddItem(AddItem item);
+    public Task RemoveItem(string userId, int basketItemId);
 }

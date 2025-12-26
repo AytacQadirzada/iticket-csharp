@@ -6,15 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Iticket.Business.Dto.Request
+namespace Iticket.Business.Dto.Request;
+
+public class SectorRequestDto
 {
-    public class SectorRequestDto
-    {
-        public string Name { get; set; }
-        public int RowCount { get; set; }
-        public int SeatCount { get; set; }
-        public int Capacity { get; set; }
-        public SectorClassification SectorClassification { get; set; }
-        public int HallId { get; set; }
-    }
+    public string Name { get; set; }
+    public int RowCount { get; set; }
+    public int SeatCount { get; set; }
+    public int Capacity { get; set; }
+    public SectorClassification SectorClassification { get; set; }
 }

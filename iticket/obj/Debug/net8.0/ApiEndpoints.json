@@ -64,6 +64,81 @@
     ]
   },
   {
+    "ContainingType": "Iticket.Controllers.BasketController",
+    "Method": "AddTisket",
+    "RelativePath": "api/Basket/AddTisket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "Iticket.Business.Dto.Request.AddItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.BasketController",
+    "Method": "GetAll",
+    "RelativePath": "api/Basket/GetAll/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Iticket.Business.Dto.Response.BasketResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.BasketController",
+    "Method": "RemoveTicket",
+    "RelativePath": "api/Basket/RemoveTicket/{userId}/{basketItemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "basketItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Iticket.Controllers.CategoryController",
     "Method": "Create",
     "RelativePath": "api/Category",
@@ -126,71 +201,9 @@
     ]
   },
   {
-    "ContainingType": "Iticket.Controllers.HallController",
-    "Method": "Create",
-    "RelativePath": "api/Hall",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Iticket.Business.Dto.Request.HallRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Iticket.Controllers.HallController",
-    "Method": "Get",
-    "RelativePath": "api/Hall/Get/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Iticket.Business.Dto.Response.HallResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Iticket.Controllers.HallController",
-    "Method": "GetAll",
-    "RelativePath": "api/Hall/GetAll",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.HallResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Iticket.Controllers.ProductController",
     "Method": "Create",
-    "RelativePath": "api/Product",
+    "RelativePath": "api/Product/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -237,6 +250,84 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.ProductResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.ProductController",
+    "Method": "GetByCategory",
+    "RelativePath": "api/Product/GetByCategory/slug",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.ProductResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.ProductController",
+    "Method": "GetByTitle",
+    "RelativePath": "api/Product/GetByTitle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Iticket.Business.Dto.Response.ProductResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Iticket.Controllers.ProductController",
+    "Method": "GetFilter",
+    "RelativePath": "api/Product/GetFilter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Iticket.Business.Dto.Request.FilterRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.ProductResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -312,68 +403,6 @@
     ]
   },
   {
-    "ContainingType": "Iticket.Controllers.SectorController",
-    "Method": "Create",
-    "RelativePath": "api/Sector",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Iticket.Business.Dto.Request.SectorRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Iticket.Controllers.SectorController",
-    "Method": "Get",
-    "RelativePath": "api/Sector/Get/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Iticket.Business.Dto.Response.SectorResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Iticket.Controllers.SectorController",
-    "Method": "GetAll",
-    "RelativePath": "api/Sector/GetAll",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.SectorResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "iticket.Controllers.UserConroller",
     "Method": "SendOtpAsync",
     "RelativePath": "api/UserConroller/SendOtp",
@@ -423,25 +452,25 @@
     ]
   },
   {
-    "ContainingType": "Iticket.Controllers.VenuesController",
+    "ContainingType": "Iticket.Controllers.VenueController",
     "Method": "Create",
-    "RelativePath": "api/Venues",
+    "RelativePath": "api/Venue",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Iticket.Business.Dto.Request.VenuesRequestDto",
+        "Type": "Iticket.Business.Dto.Request.VenueRequestDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Iticket.Controllers.VenuesController",
+    "ContainingType": "Iticket.Controllers.VenueController",
     "Method": "Get",
-    "RelativePath": "api/Venues/Get/{id}",
+    "RelativePath": "api/Venue/Get/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -454,7 +483,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Iticket.Business.Dto.Response.VenuesResponse",
+        "Type": "Iticket.Business.Dto.Response.VenueResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -465,16 +494,16 @@
     ]
   },
   {
-    "ContainingType": "Iticket.Controllers.VenuesController",
+    "ContainingType": "Iticket.Controllers.VenueController",
     "Method": "GetAll",
-    "RelativePath": "api/Venues/GetAll",
+    "RelativePath": "api/Venue/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.VenuesResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Iticket.Business.Dto.Response.VenueResponse, Iticket.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

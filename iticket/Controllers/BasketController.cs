@@ -1,4 +1,7 @@
-﻿using Iticket.Core;
+﻿using Iticket.Business.Dto.Request;
+using Iticket.Business.Dto.Response;
+using Iticket.Business.Service.Interfaces;
+using Iticket.Core;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Iticket.Controllers;
@@ -7,9 +10,28 @@ namespace Iticket.Controllers;
 [ApiController]
 public class BasketController : Controller
 {
-    private readonly IUnitOfWork _unitOfWork;
-    public BasketController(IUnitOfWork unitOfWork)
+    private readonly IBasketService _basketService;
+    public BasketController(IBasketService basketService)
     {
-        _unitOfWork = unitOfWork;
+        _basketService = basketService;
+    }
+
+    [HttpGet("[action]/{userId}")]
+    public async Task<BasketResponse> GetAll(string userId)
+    {
+        BasketResponse response = await _basketService.Get(userId);
+        return response;
+    }
+
+    [HttpPost("[action]")]
+    public async Task AddTisket([FromBody] AddItem item)
+    {
+        await _basketService.AddItem(item);
+    }
+
+    [HttpDelete("[action]/{userId}/{basketItemId}")]
+    public async Task RemoveTicket(string userId, int basketItemId)
+    {
+        await _basketService.RemoveItem(userId, basketItemId);
     }
 }
